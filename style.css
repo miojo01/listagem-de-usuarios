@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 5% 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.user-list {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-container {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.title-user {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.input-box {               
+    padding: 10px;          
+    border: 1px solid #ccc; 
+    border-radius: 4px;     
+    outline: none; 
+    font-size: 14px; 
+    transition: all 0.2s ease;       
+}
+
+.input-box:focus {
+    box-shadow: 0 0 15px 0px rgba(118, 181, 240, 0.7);
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.search {
+    padding: 10px 20px;
+    background-color: rgb(118, 181, 240);
+}
+
+.load {
+    padding: 10px 20px;
+    background-color: #ffbb00;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .input-box {
+        width: 100%;       
+    }
+
+    .search, .load {
+        width: calc(50% - 5px); /* Faz cada botão ocupar metade da linha (descontando o gap) */
+        margin: 0;
+    }
+
+}
+
