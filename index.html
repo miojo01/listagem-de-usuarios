@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista Nomes</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="title-user">Usuários</div>
+
+        <div class="menu">
+            <input type="text" id="user" class="input-box" placeholder="Pesquise um nome ">
+            <button class="search" onclick="handleSearch(usuarios)">Pesquisar</button>
+            <button class="load" onclick="handleLoad(usuarios)">Carregar</button>
+        </div>
+
+        <ul class="list-container" id="lista-usuarios">
+            <li class="user-list" id="item-lista">Nenhum nome...</li>
+        </ul>
+
+    </div>
+    
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
