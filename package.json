@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+  "predeploy": "git add . && git commit -m 'Update for deploy'",
+  "deploy": "gh-pages -d ."
+}
+}
